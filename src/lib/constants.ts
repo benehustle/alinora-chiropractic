@@ -290,6 +290,21 @@ export const FAQ_ITEMS = [
     answer:
       "Yes. Chiropractic care can be safe and beneficial during pregnancy. Dr Kim is experienced in pregnancy-safe techniques and will adapt your treatment accordingly.",
   },
+  {
+    question: "What should I wear to my appointment?",
+    answer:
+      "Wear comfortable clothing that allows us to assess and treat your spine and surrounding areas. Avoid thick belts or restrictive layers if we need to work on your mid or lower back.",
+  },
+  {
+    question: "Is there parking at the clinic?",
+    answer:
+      "Yes. There is convenient parking at our Canning Vale location. If you are unsure where to enter, call reception before you arrive and we will guide you.",
+  },
+  {
+    question: "Do you offer Medicare rebates?",
+    answer:
+      "Medicare does not routinely cover chiropractic care in the same way as some GP services. Private health extras cover often includes chiropractic; bring your card for HICAPS claiming where applicable.",
+  },
 ];
 
 export const OPENING_HOURS = [
