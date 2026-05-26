@@ -2,6 +2,7 @@ export const NAV_LINKS = [
   { label: "Services & Treatments", href: "/services" },
   { label: "Our Team", href: "/our-team" },
   { label: "Visits", href: "/visits" },
+  { label: "Pricing Our Promise", href: "/pricing-our-promise" },
   { label: "FAQ", href: "/faq" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
@@ -32,9 +33,11 @@ export const SERVICES_MAIN = [
   {
     title: "Postural Correction & Rehab",
     description:
-      "Poor posture is the root of chronic pain. We identify structural imbalances and guide you through targeted rehabilitation exercises to restore alignment and rebuild strength.",
+      "Poor posture is the root of chronic pain. We use the Exbody T770 posture analysis system to capture precise objective data on your alignment, then guide you through targeted rehabilitation exercises to restore alignment and rebuild strength.",
     icon: "posture",
     slug: "postural-correction",
+    referenceUrl: "https://exbody.kr/en_us/fitness",
+    referenceLabel: "Exbody T770",
   },
 ];
 
@@ -98,12 +101,84 @@ export const CONDITIONS_TREATED = [
   },
 ];
 
-export const PRICING = [
-  { service: "Initial Chiropractic Consultation", price: "$109" },
-  { service: "Regular Chiropractic Adjustment", price: "$69" },
-  { service: "Remedial Massage (30 min)", price: "$59" },
-  { service: "Remedial Massage (1 hr)", price: "$109" },
-  { service: "Dry Needling", price: "$59" },
+export const PRICING_DETAILED = [
+  {
+    service: "Initial Chiropractic Consultation",
+    duration: "30 min",
+    price: "$109",
+    description:
+      "Full health history, physical examination and 3D posture scan so we understand your body completely.",
+  },
+  {
+    service: "Report of Findings",
+    duration: "30 min",
+    price: "Included",
+    description:
+      "A clear walkthrough of your scan results, imaging and a personalised care plan. No extra charge.",
+  },
+  {
+    service: "Regular Chiropractic Adjustment",
+    duration: "15 min",
+    price: "$69",
+    description:
+      "Targeted spinal adjustments tailored to your progress with each visit.",
+  },
+  {
+    service: "Remedial Massage",
+    duration: "30 min",
+    price: "$59",
+    description:
+      "Focused deep tissue and trigger point release to support spinal correction.",
+  },
+  {
+    service: "Remedial Massage",
+    duration: "60 min",
+    price: "$109",
+    description:
+      "Full body session combining deep tissue, sports and myofascial techniques.",
+  },
+  {
+    service: "Dry Needling",
+    duration: "Add-on",
+    price: "$59",
+    description:
+      "Ultra-fine needles release stubborn trigger points. Available as a standalone or add-on session.",
+  },
+];
+
+export const PRICING_PROMISES = [
+  {
+    title: "No surprises, ever",
+    description:
+      "Every fee is listed below and quoted before any treatment begins. You will never receive an invoice for something we have not discussed first.",
+    icon: "shield",
+  },
+  {
+    title: "No long-term contracts",
+    description:
+      "We do not lock you into multi-month packages. Every recommendation is clinically driven, not commercially driven.",
+    icon: "unlock",
+  },
+  {
+    title: "Care that earns the next visit",
+    description:
+      "If you are not getting better, we will tell you, refer you on or stop treatment. We never recommend care you do not need.",
+    icon: "handshake",
+  },
+  {
+    title: "On-the-spot health fund claims",
+    description:
+      "HICAPS is on-site so you only pay the gap. Most major private health funds are accepted; just bring your card.",
+    icon: "card",
+  },
+];
+
+export const PAYMENT_METHODS = [
+  "EFTPOS",
+  "Visa & Mastercard",
+  "American Express",
+  "Apple Pay & Google Pay",
+  "HICAPS Health Fund Claims",
 ];
 
 export const TEAM_MEMBERS = [
@@ -197,7 +272,7 @@ export const VISIT_STEPS = [
   {
     title: "Your First Visit",
     label: "INITIAL CONSULTATION",
-    duration: "45 MIN",
+    duration: "30 MIN",
     description:
       "We map your body in detail (3D posture scan, full exam and health history), so nothing is missed.",
     steps: [
@@ -268,7 +343,7 @@ export const FAQ_ITEMS = [
   {
     question: "What should I expect at my first visit?",
     answer:
-      "Your first visit is a comprehensive 45-minute assessment. We will take a full health history, run a 3D posture scan and physical examination, and if needed refer you for x-rays. Nothing is rushed; we want to understand your body completely.",
+      "Your first visit is a focused 30-minute assessment. We will take a full health history, run a 3D posture scan and physical examination, and if needed refer you for x-rays. Nothing is rushed; we want to understand your body completely.",
   },
   {
     question: "Is chiropractic care safe?",

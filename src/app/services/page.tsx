@@ -3,14 +3,13 @@ import { PageHero } from "@/components/ui/PageHero";
 import { CTASection } from "@/components/ui/CTASection";
 import { ServiceCard } from "@/components/services/ServiceCard";
 import { PrecisionSection } from "@/components/services/PrecisionSection";
-import { PricingSection } from "@/components/services/PricingSection";
 import { ServicesTreated } from "@/components/home/ServicesTreated";
 import { SERVICES_MAIN } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Services & Treatments",
   description:
-    "Chiropractic care, remedial massage, dry needling and postural correction in Canning Vale, Perth WA. View all our services and pricing.",
+    "Chiropractic care, remedial massage, dry needling and postural correction in Canning Vale, Perth WA. View all our services.",
 };
 
 export default function ServicesPage() {
@@ -22,8 +21,10 @@ export default function ServicesPage() {
         bgImage="https://images.unsplash.com/photo-1745327883290-1e9c6447b938?auto=format&fit=crop&w=1920&q=80"
       />
 
+      <PrecisionSection />
+
       {/* Main services */}
-      <section className="py-20 lg:py-28 px-6 bg-white">
+      <section className="py-20 lg:py-28 px-6 bg-brand-offwhite">
         <div className="max-w-5xl mx-auto space-y-6">
           {SERVICES_MAIN.map((service, i) => (
             <ServiceCard
@@ -32,16 +33,14 @@ export default function ServicesPage() {
               description={service.description}
               icon={service.icon}
               index={i}
+              referenceUrl={service.referenceUrl}
+              referenceLabel={service.referenceLabel}
             />
           ))}
         </div>
       </section>
 
-      <PrecisionSection />
-
-      <ServicesTreated bg="brand-offwhite" />
-
-      <PricingSection />
+      <ServicesTreated bg="white" />
 
       <CTASection
         heading="Is pain impacting your life?"

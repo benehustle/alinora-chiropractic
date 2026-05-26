@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { OPENING_HOURS, CLINIC_INFO, NAV_LINKS } from "@/lib/constants";
 
@@ -9,9 +10,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="w-8 h-8 rounded-full bg-teal-primary flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
-                A
+            <div className="flex items-center gap-3 mb-4">
+              <span className="relative w-12 h-12 block flex-shrink-0">
+                <Image
+                  src="/logo.png"
+                  alt="Alinora Chiropractic"
+                  fill
+                  sizes="48px"
+                  className="object-contain brightness-0 invert"
+                />
               </span>
               <span className="font-semibold text-sm tracking-tight">ALINORA CHIROPRACTIC</span>
             </div>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -24,27 +25,40 @@ export function Navbar() {
     setMobileOpen(false);
   }, [pathname]);
 
-  const navBg = isHome && !scrolled
+  const isTransparent = isHome && !scrolled;
+  const navBg = isTransparent
     ? "bg-transparent"
     : "bg-white/90 backdrop-blur-md shadow-sm";
 
-  const linkColor = isHome && !scrolled ? "text-white/90 hover:text-white" : "text-brand-dark hover:text-teal-primary";
-  const logoColor = isHome && !scrolled ? "text-white" : "text-teal-dark";
+  const linkColor = isTransparent ? "text-white/90 hover:text-white" : "text-brand-dark hover:text-teal-primary";
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className={`flex items-center gap-2 font-semibold text-lg tracking-tight transition-colors duration-300 ${logoColor}`}>
-            <span className="w-8 h-8 rounded-full bg-teal-primary flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
-              A
+          <Link href="/" className="flex items-center gap-3 flex-shrink-0" aria-label="Alinora Chiropractic home">
+            <span className="relative w-10 h-10 lg:w-12 lg:h-12 block">
+              <Image
+                src="/logo.png"
+                alt="Alinora Chiropractic"
+                fill
+                priority
+                sizes="48px"
+                className={`object-contain transition-[filter] duration-300 ${
+                  isTransparent ? "brightness-0 invert" : ""
+                }`}
+              />
             </span>
-            ALINORA CHIROPRACTIC
+            <span className={`hidden sm:inline font-semibold text-sm lg:text-base tracking-tight transition-colors duration-300 ${
+              isTransparent ? "text-white" : "text-teal-dark"
+            }`}>
+              ALINORA CHIROPRACTIC
+            </span>
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-6">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
@@ -62,7 +76,7 @@ export function Navbar() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMobileOpen((v) => !v)}
-            className={`lg:hidden p-2 rounded-lg transition-colors ${isHome && !scrolled ? "text-white" : "text-brand-dark"}`}
+            className={`lg:hidden p-2 rounded-lg transition-colors ${isTransparent ? "text-white" : "text-brand-dark"}`}
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={22} /> : <Menu size={22} />}
