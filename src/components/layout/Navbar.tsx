@@ -35,25 +35,26 @@ export function Navbar() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 flex-shrink-0" aria-label="Alinora Chiropractic home">
-            <span className="relative w-10 h-10 lg:w-12 lg:h-12 block">
+            <span className="relative w-14 h-14 lg:w-16 lg:h-16 block">
               <Image
-                src="/logo.png"
+                src="/logo-mark.png"
                 alt="Alinora Chiropractic"
                 fill
                 priority
-                sizes="48px"
+                sizes="64px"
                 className={`object-contain transition-[filter] duration-300 ${
                   isTransparent ? "brightness-0 invert" : ""
                 }`}
               />
             </span>
-            <span className={`hidden sm:inline font-semibold text-sm lg:text-base tracking-tight transition-colors duration-300 ${
+            <span className={`hidden sm:flex flex-col leading-tight transition-colors duration-300 ${
               isTransparent ? "text-white" : "text-teal-dark"
             }`}>
-              ALINORA CHIROPRACTIC
+              <span className="font-semibold text-base lg:text-lg tracking-[0.18em]">ALINORA</span>
+              <span className="text-[10px] lg:text-xs tracking-[0.32em] opacity-80">CHIROPRACTIC</span>
             </span>
           </Link>
 
