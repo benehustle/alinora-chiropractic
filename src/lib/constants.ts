@@ -2,8 +2,7 @@ export const NAV_LINKS = [
   { label: "Services & Treatments", href: "/services" },
   { label: "Our Team", href: "/our-team" },
   { label: "Visits", href: "/visits" },
-  { label: "Pricing Our Promise", href: "/pricing-our-promise" },
-  { label: "FAQ", href: "/faq" },
+  { label: "Pricing & Our Promise", href: "/pricing-our-promise" },  { label: "FAQ", href: "/faq" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -103,49 +102,34 @@ export const CONDITIONS_TREATED = [
 
 export const PRICING_DETAILED = [
   {
-    service: "Initial Chiropractic Consultation",
-    duration: "30 min",
-    price: "$109",
+    service: "Initial",
+    duration: "Consultation",
+    price: "$110",
     description:
       "Full health history, physical examination and 3D posture scan so we understand your body completely.",
   },
   {
     service: "Report of Findings",
     duration: "30 min",
-    price: "Included",
+    price: "$80",
     description:
-      "A clear walkthrough of your scan results, imaging and a personalised care plan. No extra charge.",
+      "A clear walkthrough of your scan results, imaging and a personalised care plan.",
   },
   {
-    service: "Regular Chiropractic Adjustment",
+    service: "Standard Chiro",
     duration: "15 min",
-    price: "$69",
+    price: "$75",
     description:
       "Targeted spinal adjustments tailored to your progress with each visit.",
   },
   {
-    service: "Remedial Massage",
+    service: "Extended Chiro Session",
     duration: "30 min",
-    price: "$59",
+    price: "$90",
     description:
-      "Focused deep tissue and trigger point release to support spinal correction.",
-  },
-  {
-    service: "Remedial Massage",
-    duration: "60 min",
-    price: "$109",
-    description:
-      "Full body session combining deep tissue, sports and myofascial techniques.",
-  },
-  {
-    service: "Dry Needling",
-    duration: "Add-on",
-    price: "$59",
-    description:
-      "Ultra-fine needles release stubborn trigger points. Available as a standalone or add-on session.",
+      "A longer session for more complex cases or when additional treatment time is clinically needed.",
   },
 ];
-
 export const PRICING_PROMISES = [
   {
     title: "No surprises, ever",
@@ -154,24 +138,23 @@ export const PRICING_PROMISES = [
     icon: "shield",
   },
   {
-    title: "No long-term contracts",
+    title: "We measure our success by your independence, not your attendance.",
     description:
-      "We do not lock you into multi-month packages. Every recommendation is clinically driven, not commercially driven.",
+      "While building sustainable long-term health is a journey, our ultimate goal is to guide you to a point where you no longer have to rely on us. Every recommendation is strictly clinically driven by your actual progress, focusing entirely on getting you back to living life on your own terms.",
     icon: "unlock",
   },
   {
     title: "Care that earns the next visit",
     description:
-      "If you are not getting better, we will tell you, refer you on or stop treatment. We never recommend care you do not need.",
+      "No progress? We'll be honest, refer you out, or adjust our approach. Honest care you can always count on.",
     icon: "handshake",
   },
   {
-    title: "On-the-spot health fund claims",
+    title: "Deeply rooted in our community",
     description:
-      "HICAPS is on-site so you only pay the gap. Most major private health funds are accepted; just bring your card.",
-    icon: "card",
-  },
-];
+      "Our promise is to support the health and vitality of the Canning Vale community we call home. We are dedicated to providing honest, dependable care so that our neighbors can live active, pain-free lives and thrive right here in our community.",
+    icon: "community",
+  },];
 
 export const PAYMENT_METHODS = [
   "EFTPOS",

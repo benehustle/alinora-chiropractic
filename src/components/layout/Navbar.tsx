@@ -38,15 +38,14 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 flex-shrink-0" aria-label="Alinora Chiropractic home">
-            <span className="relative w-14 h-14 lg:w-16 lg:h-16 block">
+            <span className="relative w-14 h-[4.5rem] lg:w-16 lg:h-[5rem] block overflow-visible">
               <Image
                 src="/logo-mark.png"
                 alt="Alinora Chiropractic"
                 fill
                 priority
                 sizes="64px"
-                className={`object-contain transition-[filter] duration-300 ${
-                  isTransparent ? "brightness-0 invert" : ""
+                className={`object-contain object-center p-0.5 transition-[filter] duration-300 ${                  isTransparent ? "brightness-0 invert" : ""
                 }`}
               />
             </span>

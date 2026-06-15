@@ -18,10 +18,10 @@ export function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-24 pb-16">
         <div className="max-w-xl">
           <p className="text-teal-primary text-sm font-medium uppercase tracking-widest mb-4">
-            Perth&apos;s trusted chiropractors
+            Alinora Chiropractic
           </p>
           <h1 className="text-5xl md:text-6xl lg:text-7xl text-white leading-[1.05] mb-6">
-            Your Trusted Chiropractors In Perth
+            Your Alignment, Your Aura
           </h1>
           <p className="text-white/75 text-lg leading-relaxed mb-8 max-w-md">
             ALINORA CHIROPRACTIC provides expert, family-friendly chiropractic care to help you relieve back pain, improve posture and restore your spinal health naturally.

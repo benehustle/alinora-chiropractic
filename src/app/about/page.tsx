@@ -7,7 +7,6 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Button } from "@/components/ui/Button";
 import { ApproachSection } from "@/components/team/ApproachSection";
 import { TrustPillarsSection } from "@/components/team/TrustPillarsSection";
-import { CLINIC_INFO } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -20,13 +19,13 @@ export default function AboutPage() {
     <>
       <PageHero
         title="About Alinora Chiropractic"
-        subtitle="Advanced diagnostics, compassionate hands-on care and a clear path from pain to lasting wellbeing."
+        subtitle="A fresh, modern approach to musculoskeletal health in the heart of Canning Vale."
         bgImage="https://images.unsplash.com/photo-1758691462878-6edc3d3da1be?auto=format&fit=crop&w=1920&q=80"
       />
 
       <section className="py-20 lg:py-28 px-6 bg-white">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <AnimatedSection direction="left" className="relative">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+          <AnimatedSection direction="left" className="relative lg:sticky lg:top-28">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1768507423533-b87b62769758?auto=format&fit=crop&w=900&q=80"
@@ -39,22 +38,28 @@ export default function AboutPage() {
           </AnimatedSection>
           <AnimatedSection direction="right" delay={0.1}>
             <p className="text-teal-primary text-sm font-medium uppercase tracking-widest mb-4">
-              Our story
+              About us
             </p>
-            <h2 className="text-4xl md:text-5xl text-brand-dark leading-tight mb-6">
-              Precision, clarity and genuine care
-            </h2>
-            <div className="space-y-4 text-brand-muted text-lg leading-relaxed">
+            <div className="space-y-8 text-brand-muted text-lg leading-relaxed">
               <p>
-                Alinora Chiropractic exists to move spinal care beyond quick fixes. We combine 3D posture and
-                musculoskeletal analysis with skilled adjustments and soft tissue therapy so you understand your
-                body, not just mask symptoms.
+                Opening its doors in 2026, Alinora Chiropractic brings a fresh, modern approach to musculoskeletal health in the heart of Canning Vale. We believe that exceptional healthcare requires more than just guesswork—it demands a deep understanding of human biomechanics and a commitment to strictly evidence-based practice. Our mission is to empower our community with a transparent, honest approach to pain relief, posture correction, and overall physical performance.
               </p>
-              <p>
-                Our team in {CLINIC_INFO.locations[0]} serves families across Perth with evidence-based techniques,
-                transparent care plans and the time to listen. Whether you are dealing with chronic back pain, headaches
-                or postural strain from daily life, we map a path that fits you.
-              </p>
+              <div>
+                <h2 className="text-2xl md:text-3xl text-brand-dark leading-tight mb-4">
+                  Comprehensive, Modern Treatment
+                </h2>
+                <p>
+                  Whether you are an office professional dealing with daily strain, an active individual looking to optimize athletic performance, or someone seeking lasting relief from chronic discomfort, our tailored management plans are designed to get real results. We move beyond outdated concepts, combining precise manual therapy with modern clinical modalities and active rehabilitation to ensure you recover faster and stay resilient.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-2xl md:text-3xl text-brand-dark leading-tight mb-4">
+                  A Space Designed for Your Healing
+                </h2>
+                <p>
+                  We wanted to break away from the traditional, sterile clinic environment to create a uniquely creative and welcoming space for your healing journey. At Alinora Chiropractic, we are deeply dedicated to educating our patients, providing you with the tools, knowledge, and confidence to take control of your well-being. Welcome to a new standard of movement and care.
+                </p>
+              </div>
             </div>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Button href="/our-team" size="md">

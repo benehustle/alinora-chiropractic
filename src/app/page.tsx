@@ -7,7 +7,7 @@ import { ServicesTreated } from "@/components/home/ServicesTreated";
 import { ContactSection } from "@/components/home/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Alinora Chiropractic | Your Trusted Chiropractors in Perth",
+  title: "Alinora Chiropractic | Your Alignment, Your Aura",
   description:
     "Expert chiropractic care, remedial massage, dry needling and postural correction in Canning Vale, Perth WA. Book your appointment today.",
 };

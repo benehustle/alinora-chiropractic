@@ -31,14 +31,14 @@ export function AboutTeaser() {
             About us
           </p>
           <h2 className="text-4xl md:text-5xl text-brand-dark leading-tight mb-6">
-            Precision & Clarity.{" "}
-            <span className="text-teal-primary">Visualize your progress.</span>
+            A new standard of{" "}
+            <span className="text-teal-primary">movement and care.</span>
           </h2>
           <p className="text-brand-muted text-lg leading-relaxed mb-4">
-            Welcome to Alinora Chiropractic, where advanced technology meets passionate care. Using 3D musculoskeletal and posture analysis systems, we give you clear, visual understanding of your body.
+            Opening its doors in 2026, Alinora Chiropractic brings a fresh, modern approach to musculoskeletal health in the heart of Canning Vale. We believe that exceptional healthcare requires more than just guesswork—it demands a deep understanding of human biomechanics and a commitment to strictly evidence-based practice.
           </p>
           <p className="text-brand-muted leading-relaxed mb-8">
-            This data-driven approach removes the guesswork, ensuring personalised treatments and measurable progress every step of the way.
+            Our mission is to empower our community with a transparent, honest approach to pain relief, posture correction, and overall physical performance.
           </p>
           <Button href="/about" size="md">
             About Us

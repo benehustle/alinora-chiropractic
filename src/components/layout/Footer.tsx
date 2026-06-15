@@ -11,14 +11,13 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <span className="relative w-14 h-14 block flex-shrink-0">
+              <span className="relative w-14 h-[4.5rem] block flex-shrink-0 overflow-visible">
                 <Image
                   src="/logo-mark.png"
                   alt="Alinora Chiropractic"
                   fill
                   sizes="56px"
-                  className="object-contain brightness-0 invert"
-                />
+                  className="object-contain object-center p-0.5 brightness-0 invert"                />
               </span>
               <span className="flex flex-col leading-tight">
                 <span className="font-semibold text-base tracking-[0.18em]">ALINORA</span>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ShieldCheck, Unlock, Handshake, CreditCard, Check } from "lucide-react";
+import { ShieldCheck, Unlock, Handshake, Users, Check } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
 import { CTASection } from "@/components/ui/CTASection";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -7,24 +7,24 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { PRICING_DETAILED, PRICING_PROMISES, PAYMENT_METHODS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Pricing Our Promise",
+  title: "Pricing & Our Promise",
   description:
-    "Honest, transparent pricing at Alinora Chiropractic. No hidden fees, no long-term contracts, on-the-spot HICAPS claims.",
+    "Honest, transparent pricing at Alinora Chiropractic. No hidden fees, clinically driven care, and a commitment to the Canning Vale community.",
 };
 
 const promiseIconMap: Record<string, React.ElementType> = {
   shield: ShieldCheck,
   unlock: Unlock,
   handshake: Handshake,
-  card: CreditCard,
+  community: Users,
 };
 
 export default function PricingOurPromisePage() {
   return (
     <>
       <PageHero
-        title="Pricing Our Promise"
-        subtitle="Honest, transparent pricing. No hidden fees, no pressure, no long-term contracts."
+        title="Pricing & Our Promise"
+        subtitle="Honest, transparent pricing. No hidden fees, no pressure, clinically driven care."
         bgImage="https://images.unsplash.com/photo-1758691461957-474a7686e388?auto=format&fit=crop&w=1920&q=80"
       />
 
