@@ -7,6 +7,7 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Button } from "@/components/ui/Button";
 import { ApproachSection } from "@/components/team/ApproachSection";
 import { TrustPillarsSection } from "@/components/team/TrustPillarsSection";
+import { BOOKING_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -42,7 +43,7 @@ export default function AboutPage() {
             </p>
             <div className="space-y-8 text-brand-muted text-lg leading-relaxed">
               <p>
-                Opening its doors in 2026, Alinora Chiropractic brings a fresh, modern approach to musculoskeletal health in the heart of Canning Vale. We believe that exceptional healthcare requires more than just guesswork—it demands a deep understanding of human biomechanics and a commitment to strictly evidence-based practice. Our mission is to empower our community with a transparent, honest approach to pain relief, posture correction, and overall physical performance.
+                Opening its doors in 2026, Alinora Chiropractic brings a fresh, modern approach to musculoskeletal health in the heart of Canning Vale. We believe that exceptional healthcare requires more than just guesswork, it demands a deep understanding of human biomechanics and a commitment to strictly evidence based practice. Our mission is to empower our community with a transparent, honest approach to pain relief, posture correction, and overall physical performance.
               </p>
               <div>
                 <h2 className="text-2xl md:text-3xl text-brand-dark leading-tight mb-4">
@@ -57,7 +58,7 @@ export default function AboutPage() {
                   A Space Designed for Your Healing
                 </h2>
                 <p>
-                  We wanted to break away from the traditional, sterile clinic environment to create a uniquely creative and welcoming space for your healing journey. At Alinora Chiropractic, we are deeply dedicated to educating our patients, providing you with the tools, knowledge, and confidence to take control of your well-being. Welcome to a new standard of movement and care.
+                  We wanted to break away from the traditional, sterile clinic environment to create a uniquely creative and welcoming space for your healing journey. At Alinora Chiropractic, we are deeply dedicated to educating our patients, providing you with the tools, knowledge, and confidence to take control of your well being. Welcome to a new standard of movement and care.
                 </p>
               </div>
             </div>
@@ -99,7 +100,7 @@ export default function AboutPage() {
         heading="Start your journey with us"
         subtext="Book an initial consultation and experience care that is measured, explained and tailored to you."
         buttonLabel="Book Appointment"
-        buttonHref="https://www.cliniko.com"
+        buttonHref={BOOKING_URL}
         secondaryLabel="Contact Us"
         secondaryHref="/contact"
       />

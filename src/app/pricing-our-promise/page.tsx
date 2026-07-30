@@ -127,7 +127,7 @@ export default function PricingOurPromisePage() {
 
           <AnimatedSection delay={0.2}>
             <p className="text-sm text-brand-muted text-center mt-6">
-              Prices are inclusive of GST. Private health rebates apply where
+              Private health rebates apply where
               your fund covers chiropractic or remedial massage extras.
             </p>
           </AnimatedSection>

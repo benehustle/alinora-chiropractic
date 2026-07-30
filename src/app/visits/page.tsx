@@ -3,7 +3,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { CTASection } from "@/components/ui/CTASection";
 import { VisitCard } from "@/components/visits/VisitCard";
 import { MeasureSection } from "@/components/visits/MeasureSection";
-import { VISIT_STEPS } from "@/lib/constants";
+import { VISIT_STEPS, BOOKING_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Your Visits",
@@ -34,7 +34,7 @@ export default function VisitsPage() {
         heading="Ready to begin?"
         subtext="Your first visit is the most important step. We will listen, assess and give you a clear understanding of what your body needs."
         buttonLabel="Book Your First Visit"
-        buttonHref="https://www.cliniko.com"
+        buttonHref={BOOKING_URL}
       />
     </>
   );

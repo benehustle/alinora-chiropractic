@@ -4,7 +4,7 @@ import { CTASection } from "@/components/ui/CTASection";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { FAQAccordion } from "@/components/faq/FAQAccordion";
-import { CLINIC_INFO } from "@/lib/constants";
+import { CLINIC_INFO, BOOKING_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -19,6 +19,8 @@ export default function FAQPage() {
         title="Frequently Asked Questions"
         subtitle="Straight answers about chiropractic care, your first visit, insurance and what to expect at our clinic."
         bgImage="https://images.unsplash.com/photo-1758691461957-474a7686e388?auto=format&fit=crop&w=1920&q=80"
+        titleClassName="whitespace-nowrap text-[clamp(1.5rem,4vw+0.5rem,3.75rem)]"
+        contentClassName="max-w-none"
       />
 
       <section className="py-20 lg:py-28 px-6 bg-brand-offwhite">
@@ -42,7 +44,7 @@ export default function FAQPage() {
         buttonLabel="Contact Us"
         buttonHref="/contact"
         secondaryLabel="Book Appointment"
-        secondaryHref="https://www.cliniko.com"
+        secondaryHref={BOOKING_URL}
       />
     </>
   );

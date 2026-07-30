@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
+import { BOOKING_URL } from "@/lib/constants";
 
 export function Hero() {
   return (
@@ -24,10 +25,10 @@ export function Hero() {
             Your Alignment, Your Aura
           </h1>
           <p className="text-white/75 text-lg leading-relaxed mb-8 max-w-md">
-            ALINORA CHIROPRACTIC provides expert, family-friendly chiropractic care to help you relieve back pain, improve posture and restore your spinal health naturally.
+            Alinora Chiropractic provides expert, family friendly chiropractic care to help you relieve back pain, improve posture and restore your spinal health naturally.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button href="https://www.cliniko.com" size="lg">
+            <Button href={BOOKING_URL} size="lg">
               Book An Appointment
             </Button>
             <Button href="/visits" variant="outline" size="lg" className="border-white text-white hover:bg-white/10">

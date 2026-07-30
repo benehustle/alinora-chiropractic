@@ -10,20 +10,17 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="relative w-14 h-[4.5rem] block flex-shrink-0 overflow-visible">
+            <Link href="/" className="inline-block mb-4" aria-label="Alinora Chiropractic home">
+              <span className="relative w-[14.3rem] h-[3.25rem] block">
                 <Image
-                  src="/logo-mark.png"
+                  src="/alinora-logo.png"
                   alt="Alinora Chiropractic"
                   fill
-                  sizes="56px"
-                  className="object-contain object-center p-0.5 brightness-0 invert"                />
+                  sizes="229px"
+                  className="object-contain object-left brightness-0 invert"
+                />
               </span>
-              <span className="flex flex-col leading-tight">
-                <span className="font-semibold text-base tracking-[0.18em]">ALINORA</span>
-                <span className="text-[10px] tracking-[0.32em] opacity-80">CHIROPRACTIC</span>
-              </span>
-            </div>
+            </Link>
             <p className="text-white/60 text-sm leading-relaxed">
               Compassionate, authentic and caring chiropractic care in Canning Vale, Perth.
             </p>

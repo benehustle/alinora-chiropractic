@@ -2,6 +2,7 @@ import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { BOOKING_URL } from "@/lib/constants";
 
 interface Step {
   title: string;
@@ -73,7 +74,7 @@ export function VisitCard({
           </ul>
 
           {cta && (
-            <Button href="https://www.cliniko.com" size="md">
+            <Button href={BOOKING_URL} size="md">
               {cta}
             </Button>
           )}

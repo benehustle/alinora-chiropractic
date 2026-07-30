@@ -6,7 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { NAV_LINKS } from "@/lib/constants";
+import { NAV_LINKS, BOOKING_URL } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
 
 export function Navbar() {
@@ -37,23 +37,18 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 flex-shrink-0" aria-label="Alinora Chiropractic home">
-            <span className="relative w-14 h-[4.5rem] lg:w-16 lg:h-[5rem] block overflow-visible">
+          <Link href="/" className="flex items-center flex-shrink-0" aria-label="Alinora Chiropractic home">
+            <span className="relative w-44 h-10 sm:w-48 sm:h-11 lg:w-52 lg:h-12 block">
               <Image
-                src="/logo-mark.png"
+                src="/alinora-logo.png"
                 alt="Alinora Chiropractic"
                 fill
                 priority
-                sizes="64px"
-                className={`object-contain object-center p-0.5 transition-[filter] duration-300 ${                  isTransparent ? "brightness-0 invert" : ""
+                sizes="(min-width: 1024px) 208px, 176px"
+                className={`object-contain object-left transition-[filter] duration-300 ${
+                  isTransparent ? "brightness-0 invert" : ""
                 }`}
               />
-            </span>
-            <span className={`hidden sm:flex flex-col leading-tight transition-colors duration-300 ${
-              isTransparent ? "text-white" : "text-teal-dark"
-            }`}>
-              <span className="font-semibold text-base lg:text-lg tracking-[0.18em]">ALINORA</span>
-              <span className="text-[10px] lg:text-xs tracking-[0.32em] opacity-80">CHIROPRACTIC</span>
             </span>
           </Link>
 
@@ -68,7 +63,7 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Button href="https://www.cliniko.com" size="sm">
+            <Button href={BOOKING_URL} size="sm">
               Book Appointment
             </Button>
           </nav>
@@ -105,7 +100,7 @@ export function Navbar() {
                 </Link>
               ))}
               <div className="mt-3 pt-3 border-t border-brand-border">
-                <Button href="https://www.cliniko.com" className="w-full justify-center">
+                <Button href={BOOKING_URL} className="w-full justify-center">
                   Book Appointment
                 </Button>
               </div>

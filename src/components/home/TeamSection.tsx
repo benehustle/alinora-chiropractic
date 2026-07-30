@@ -15,7 +15,7 @@ export function TeamSection() {
           />
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+        <div className="max-w-xs mx-auto">
           {TEAM_MEMBERS.map((member, i) => (
             <AnimatedSection key={member.name} delay={i * 0.15}>
               <Link href="/our-team" className="group block text-center">

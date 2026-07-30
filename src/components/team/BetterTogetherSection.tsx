@@ -8,10 +8,10 @@ export function BetterTogetherSection() {
           <span className="text-2xl">🤝</span>
         </div>
         <h2 className="text-4xl md:text-5xl text-white leading-tight mb-6">
-          Better Together
+          Personalised Care
         </h2>
         <p className="text-white/70 text-lg leading-relaxed">
-          Dr Kim and Jessica do not work in silos. Every treatment plan is discussed, refined and adjusted together. When your spine is aligned and your soft tissue is released in the same timeframe, recovery stops feeling like a guessing game and starts feeling like a clear path forward.
+          Every treatment plan is carefully assessed, refined and adjusted to suit your needs. By combining spinal alignment with soft tissue treatment when needed, your care follows a structured, personalised approach. This creates a clear path to recovery, helping you move better, reduce pain and achieve lasting results.
         </p>
       </AnimatedSection>
     </section>

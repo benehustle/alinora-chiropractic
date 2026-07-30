@@ -11,7 +11,7 @@ export function PrecisionSection() {
           <SectionHeading
             eyebrow="Objective data, every visit"
             title="Precision & Clarity"
-            subtitle="We don't guess; we measure. Objective data drives every treatment decision."
+            subtitle="We don't guess, we measure. Objective data drives every treatment decision."
           />
         </AnimatedSection>
 

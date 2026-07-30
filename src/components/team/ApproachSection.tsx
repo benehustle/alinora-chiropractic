@@ -17,7 +17,7 @@ export function ApproachSection() {
           <SectionHeading
             eyebrow="How we work"
             title="Our Approach"
-            subtitle="We believe the best outcomes happen when precise diagnostics meet compassionate hands-on care."
+            subtitle="We believe the best outcomes happen when precise diagnostics meet compassionate hands on care."
           />
         </AnimatedSection>
 

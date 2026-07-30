@@ -9,7 +9,7 @@ import { SERVICES_MAIN } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Services & Treatments",
   description:
-    "Chiropractic care, remedial massage, dry needling and postural correction in Canning Vale, Perth WA. View all our services.",
+    "Chiropractic care, dry needling and postural correction in Canning Vale, Perth WA. View all our services.",
 };
 
 export default function ServicesPage() {

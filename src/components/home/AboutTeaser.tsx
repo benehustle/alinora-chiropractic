@@ -20,7 +20,7 @@ export function AboutTeaser() {
           {/* floating badge */}
           <div className="absolute bottom-6 left-6 bg-teal-primary text-white px-5 py-3 rounded-xl shadow-lg max-w-[200px]">
             <p className="text-xs font-semibold uppercase tracking-wide leading-snug">
-              ALINORA CHIROPRACTIC: compassionate, authentic and caring
+              Alinora Chiropractic: Compassionate, Authentic and Caring
             </p>
           </div>
         </AnimatedSection>
@@ -35,7 +35,7 @@ export function AboutTeaser() {
             <span className="text-teal-primary">movement and care.</span>
           </h2>
           <p className="text-brand-muted text-lg leading-relaxed mb-4">
-            Opening its doors in 2026, Alinora Chiropractic brings a fresh, modern approach to musculoskeletal health in the heart of Canning Vale. We believe that exceptional healthcare requires more than just guesswork—it demands a deep understanding of human biomechanics and a commitment to strictly evidence-based practice.
+            Opening its doors in 2026, Alinora Chiropractic brings a fresh, modern approach to musculoskeletal health in the heart of Canning Vale. We believe that exceptional healthcare requires more than just guesswork, it demands a deep understanding of human biomechanics and a commitment to strictly evidence based practice.
           </p>
           <p className="text-brand-muted leading-relaxed mb-8">
             Our mission is to empower our community with a transparent, honest approach to pain relief, posture correction, and overall physical performance.

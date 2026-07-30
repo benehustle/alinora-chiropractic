@@ -7,6 +7,8 @@ export const NAV_LINKS = [
   { label: "Contact", href: "/contact" },
 ];
 
+export const BOOKING_URL = "https://alinora-chiropractic.au5.cliniko.com/bookings";
+
 export const SERVICES_MAIN = [
   {
     title: "Chiropractic Care",
@@ -14,13 +16,6 @@ export const SERVICES_MAIN = [
       "Protected by your spine, your nervous system controls every system of your body. Our chiropractors precisely detect and correct spinal dysfunction to restore optimal health.",
     icon: "spine",
     slug: "chiropractic-care",
-  },
-  {
-    title: "Remedial Massage",
-    description:
-      "Your body is stabilised, mobilised and protected by a complex network of soft tissue. We use remedial massage, dry needling and deep sports massage to restore and repair soft tissue problems.",
-    icon: "hands",
-    slug: "remedial-massage",
   },
   {
     title: "Dry Needling",
@@ -50,13 +45,13 @@ export const PRECISION_ITEMS = [
   {
     title: "Musculoskeletal Analysis",
     description:
-      "Real-time tracking of joint range-of-motion and movement patterns. Quantified metrics let us pinpoint dysfunction and monitor progress with clinical accuracy.",
+      "Real time tracking of joint range of motion and movement patterns. Quantified metrics let us pinpoint dysfunction and monitor progress with clinical accuracy.",
     image: "https://images.unsplash.com/photo-1764314232905-2c3f32d6c717?auto=format&fit=crop&w=900&q=80",
   },
   {
     title: "Visualise Your Progress",
     description:
-      "Before-and-after data comparisons that make your improvement tangible. See the exact changes in your posture and mobility over time.",
+      "Before and after data comparisons that make your improvement tangible. See the exact changes in your posture and mobility over time.",
     image: "https://images.unsplash.com/photo-1758691461957-474a7686e388?auto=format&fit=crop&w=900&q=80",
   },
 ];
@@ -71,13 +66,13 @@ export const CONDITIONS_TREATED = [
   {
     title: "Neck Pain",
     description:
-      "Gentle, effective treatment for neck stiffness, tension and whiplash-related discomfort to restore mobility and comfort.",
+      "Gentle, effective treatment for neck stiffness, tension and whiplash related discomfort to restore mobility and comfort.",
     icon: "neck",
   },
   {
     title: "Headaches & Migraines",
     description:
-      "Addressing the spinal and nervous system causes of recurring headaches and migraines for long-term relief.",
+      "Addressing the spinal and nervous system causes of recurring headaches and migraines for long term relief.",
     icon: "head",
   },
   {
@@ -89,34 +84,27 @@ export const CONDITIONS_TREATED = [
   {
     title: "Postural Correction",
     description:
-      "Data-driven postural analysis and correction programs to prevent long-term spinal degeneration and discomfort.",
+      "Data driven postural analysis and correction programs to prevent long term spinal degeneration and discomfort.",
     icon: "posture",
   },
   {
     title: "Sports Injuries",
     description:
-      "Rehabilitation and performance-focused care to get you back to your favourite activities safely and quickly.",
+      "Rehabilitation and performance focused care to get you back to your favourite activities safely and quickly.",
     icon: "sport",
   },
 ];
 
 export const PRICING_DETAILED = [
   {
-    service: "Initial",
-    duration: "Consultation",
-    price: "$110",
+    service: "Initial Consultation",
+    duration: "30 MIN",
+    price: "$115",
     description:
       "Full health history, physical examination and 3D posture scan so we understand your body completely.",
   },
   {
-    service: "Report of Findings",
-    duration: "30 min",
-    price: "$80",
-    description:
-      "A clear walkthrough of your scan results, imaging and a personalised care plan.",
-  },
-  {
-    service: "Standard Chiro",
+    service: "Standard Treatment",
     duration: "15 min",
     price: "$75",
     description:
@@ -125,9 +113,23 @@ export const PRICING_DETAILED = [
   {
     service: "Extended Chiro Session",
     duration: "30 min",
-    price: "$90",
+    price: "$100",
     description:
       "A longer session for more complex cases or when additional treatment time is clinically needed.",
+  },
+  {
+    service: "Sunday Emergency Initial Consultation",
+    duration: "30 MIN",
+    price: "$145",
+    description:
+      "Full health history, physical examination and 3D posture scan, with priority Sunday availability for urgent cases requiring immediate assessment.",
+  },
+  {
+    service: "Sunday Standard Appointment",
+    duration: "15 MIN",
+    price: "$90",
+    description:
+      "Targeted spinal adjustments with the convenience of a Sunday appointment to keep your treatment on track.",
   },
 ];
 export const PRICING_PROMISES = [
@@ -140,7 +142,7 @@ export const PRICING_PROMISES = [
   {
     title: "We measure our success by your independence, not your attendance.",
     description:
-      "While building sustainable long-term health is a journey, our ultimate goal is to guide you to a point where you no longer have to rely on us. Every recommendation is strictly clinically driven by your actual progress, focusing entirely on getting you back to living life on your own terms.",
+      "While building sustainable long term health is a journey, our ultimate goal is to guide you to a point where you no longer have to rely on us. Every recommendation is strictly clinically driven by your actual progress, focusing entirely on getting you back to living life on your own terms.",
     icon: "unlock",
   },
   {
@@ -172,7 +174,7 @@ export const TEAM_MEMBERS = [
     imageAlt: "Dr Hyo Seok Kim, Principal Chiropractor",
     bio: [
       "Dr Hyo Seok Kim founded ALINORA CHIROPRACTIC with a clear mission: to move spinal care beyond quick fixes into genuine, lasting transformation. With years of clinical experience and a deep interest in biomechanics, he believes every ache and irritation tells a story, and his job is to read that story precisely.",
-      "His practice combines advanced 3D postural analysis with hands-on spinal adjustment techniques. Rather than chasing symptoms, Dr Kim traces problems back to their structural root, whether that is a rotated pelvis, compressed disc or compensatory muscle pattern. Patients leave not only feeling relief, but understanding why the pain existed in the first place.",
+      "His practice combines advanced 3D postural analysis with hands on spinal adjustment techniques. Rather than chasing symptoms, Dr Kim traces problems back to their structural root, whether that is a rotated pelvis, compressed disc or compensatory muscle pattern. Patients leave not only feeling relief, but understanding why the pain existed in the first place.",
       "Outside the treatment room, Dr Kim is passionate about educating patients on daily movement habits, ergonomics and preventive exercise. He sees recovery as a partnership, and takes time to make sure every patient feels heard, informed and empowered.",
     ],
     quote:
@@ -184,27 +186,6 @@ export const TEAM_MEMBERS = [
       "Sports Injury Recovery",
       "Headache & Migraine Care",
       "Chronic Back Pain",
-    ],
-  },
-  {
-    name: "Jessica Park",
-    title: "Senior Remedial Massage Therapist",
-    image: "https://images.unsplash.com/photo-1758691462651-611d730c5272?auto=format&fit=crop&crop=faces&w=900&h=1200&q=80",
-    imageAlt: "Jessica Park, Remedial Massage Therapist",
-    bio: [
-      "Jessica Park brings a rare combination of deep technical skill and intuitive touch to every session at ALINORA. Trained in remedial massage, sports therapy and dry needling, she has spent years refining her ability to locate the exact tissue layer where tension hides.",
-      "She works in close collaboration with Dr Kim, ensuring that muscular release and spinal alignment happen in sync. Where chiropractic care restores joint motion, Jessica softens the surrounding tissue so the body accepts and holds that change. It is this integrated approach that allows patients to recover faster and stay stable longer.",
-      "Jessica is especially known for her thoroughness. She does not rush through routines; she adapts pressure, technique and focus area in real time based on how the tissue responds. Patients often describe her sessions as both therapeutic and deeply calming.",
-    ],
-    quote:
-      "Muscles hold memory. My job is to release the tension and give your body space to heal.",
-    focusAreas: [
-      "Deep Tissue Massage",
-      "Dry Needling",
-      "Sports Massage",
-      "Myofascial Release",
-      "Pain Management",
-      "Soft Tissue Rehabilitation",
     ],
   },
 ];
@@ -225,20 +206,20 @@ export const APPROACH_STEPS = [
   {
     title: "Sustain",
     description:
-      "Preventative lifestyle guidance, continous progress tracking and support to keep you well long-term.",
+      "Preventative lifestyle guidance, continous progress tracking and support to keep you well long term.",
     icon: "sustain",
   },
 ];
 
 export const TRUST_PILLARS = [
   {
-    title: "Patient-First Care",
+    title: "Patient First Care",
     description:
-      "Every decision starts with your comfort, goals and long-term wellbeing. We listen before we act.",
+      "Every decision starts with your comfort, goals and long term wellbeing. We listen before we act.",
     icon: "heart",
   },
   {
-    title: "Evidence-Based Practice",
+    title: "Evidence Based Practice",
     description:
       "We combine clinical expertise with the latest diagnostic technology for measurable, reproducible results.",
     icon: "chart",
@@ -246,7 +227,7 @@ export const TRUST_PILLARS = [
   {
     title: "Collaborative Recovery",
     description:
-      "Chiropractic and soft tissue therapy work hand-in-hand, so your care always feels like a clear path forward.",
+      "Chiropractic and soft tissue therapy work hand in hand, so your care always feels like a clear path forward.",
     icon: "people",
   },
 ];
@@ -290,8 +271,8 @@ export const VISIT_STEPS = [
       "Each session is tailored to your progress: precise, efficient and designed to move you closer to lasting relief.",
     steps: [
       { title: "Manual Adjustments", desc: "Restore joint motion and correct misalignment." },
-      { title: "Instrument-Assisted", desc: "Gentle targeted corrections when needed." },
-      { title: "Post-Adjustment Walk", desc: "Help your spine settle into its new position." },
+      { title: "Instrument Assisted", desc: "Gentle targeted corrections when needed." },
+      { title: "Post Adjustment Walk", desc: "Help your spine settle into its new position." },
       { title: "Progress Tracking", desc: "Re-evaluations keep your plan evolving." },
     ],
     image: "https://images.unsplash.com/photo-1768507423533-b87b62769758?auto=format&fit=crop&w=1000&q=80",
@@ -306,13 +287,13 @@ export const MEASURE_ITEMS = [
     icon: "scan",
   },
   {
-    title: "Data-Driven",
+    title: "Data Driven",
     description: "Real numbers guide every move.",
     icon: "data",
   },
   {
     title: "Track Progress",
-    description: "Re-scan and see real change.",
+    description: "Rescan and see real change.",
     icon: "track",
   },
 ];
@@ -326,27 +307,27 @@ export const FAQ_ITEMS = [
   {
     question: "What should I expect at my first visit?",
     answer:
-      "Your first visit is a focused 30-minute assessment. We will take a full health history, run a 3D posture scan and physical examination, and if needed refer you for x-rays. Nothing is rushed; we want to understand your body completely.",
+      "Your first visit is a focused 30-minute assessment. We will take a full health history, run a 3D posture scan and physical examination, and if needed refer you for x-rays. Nothing is rushed, we want to understand your body completely.",
   },
   {
     question: "Is chiropractic care safe?",
     answer:
-      "Yes. Chiropractic care is one of the safest forms of healthcare for musculoskeletal conditions. Our practitioners are fully registered and use evidence-based techniques appropriate to your individual case.",
+      "Yes. Chiropractic care is one of the safest forms of healthcare for musculoskeletal conditions. Our practitioners are fully registered and use evidence based techniques appropriate to your individual case.",
   },
   {
     question: "How many sessions will I need?",
     answer:
-      "This depends on the nature and duration of your condition. After your Report of Findings visit, we will give you a personalised care plan with a clear timeline and frequency, and no open-ended commitments.",
+      "This depends on the nature and duration of your condition. After your Report of Findings visit, we will give you a personalised care plan with a clear timeline and frequency, and no open ended commitments.",
   },
   {
     question: "Do you accept private health insurance?",
     answer:
-      "Yes, we accept most major private health funds. We have HICAPS on-site for on-the-spot claiming. Please bring your health fund card to your appointment.",
+      "Yes, we accept most major private health funds. We have HICAPS onsite for on the spot claiming. Please bring your health fund card to your appointment.",
   },
   {
     question: "Can I see a chiropractor if I am pregnant?",
     answer:
-      "Yes. Chiropractic care can be safe and beneficial during pregnancy. Dr Kim is experienced in pregnancy-safe techniques and will adapt your treatment accordingly.",
+      "Yes. Chiropractic care can be safe and beneficial during pregnancy. Dr Kim is experienced in pregnancy safe techniques and will adapt your treatment accordingly.",
   },
   {
     question: "What should I wear to my appointment?",
@@ -366,10 +347,13 @@ export const FAQ_ITEMS = [
 ];
 
 export const OPENING_HOURS = [
-  { day: "Monday", hours: "9am – 6:30pm" },
-  { day: "Tuesday – Friday", hours: "8:00am – 6:30pm" },
-  { day: "Saturday", hours: "7:30am – 11:30am" },
-  { day: "Sunday", hours: "Closed" },
+  { day: "Monday", hours: "8:00 am – 5:00 pm" },
+  { day: "Tuesday", hours: "8:00 am – 12:00 pm" },
+  { day: "Wednesday", hours: "Closed" },
+  { day: "Thursday", hours: "8:00 am – 5:00 pm" },
+  { day: "Friday", hours: "8:00 am – 12:00 pm" },
+  { day: "Saturday", hours: "Closed" },
+  { day: "Sunday", hours: "9:00 am – 1:00 pm" },
 ];
 
 export const CLINIC_INFO = {
