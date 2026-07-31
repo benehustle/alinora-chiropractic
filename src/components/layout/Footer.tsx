@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import { OPENING_HOURS, CLINIC_INFO, NAV_LINKS } from "@/lib/constants";
+import { OPENING_HOURS, CLINIC_INFO, NAV_LINKS, CLINIC_PHONE_HREF } from "@/lib/constants";
 
 export function Footer() {
   return (
@@ -51,7 +51,7 @@ export function Footer() {
               Contact
             </h3>
             <div className="space-y-3">
-              <a href={`tel:${CLINIC_INFO.phone}`} className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors">
+              <a href={CLINIC_PHONE_HREF} className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors">
                 <Phone size={14} className="text-teal-primary flex-shrink-0" />
                 {CLINIC_INFO.phone}
               </a>

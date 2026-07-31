@@ -4,7 +4,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { CTASection } from "@/components/ui/CTASection";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
-import { PRICING_DETAILED, PRICING_PROMISES, PAYMENT_METHODS } from "@/lib/constants";
+import { PRICING_DETAILED, PRICING_PROMISES, PAYMENT_METHODS, CLINIC_PHONE_HREF, CLINIC_INFO } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Pricing & Our Promise",
@@ -182,9 +182,9 @@ export default function PricingOurPromisePage() {
         heading="Have a question about pricing?"
         subtext="Reach out before your first visit. We are happy to walk you through anything that is not clear."
         buttonLabel="Call Us"
-        buttonHref="tel:0894085724"
+        buttonHref={CLINIC_PHONE_HREF}
         secondaryLabel="Email Us"
-        secondaryHref="mailto:hello@alinorachiropractic.com.au"
+        secondaryHref={`mailto:${CLINIC_INFO.email}`}
       />
     </>
   );

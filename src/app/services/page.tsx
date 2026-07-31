@@ -4,7 +4,7 @@ import { CTASection } from "@/components/ui/CTASection";
 import { ServiceCard } from "@/components/services/ServiceCard";
 import { PrecisionSection } from "@/components/services/PrecisionSection";
 import { ServicesTreated } from "@/components/home/ServicesTreated";
-import { SERVICES_MAIN } from "@/lib/constants";
+import { SERVICES_MAIN, CLINIC_PHONE_HREF, CLINIC_INFO } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Services & Treatments",
@@ -46,9 +46,9 @@ export default function ServicesPage() {
         heading="Is pain impacting your life?"
         subtext="Let us solve your problem."
         buttonLabel="Call Us"
-        buttonHref={`tel:0894085724`}
+        buttonHref={CLINIC_PHONE_HREF}
         secondaryLabel="Email Us"
-        secondaryHref="mailto:hello@alinorachiropractic.com.au"
+        secondaryHref={`mailto:${CLINIC_INFO.email}`}
       />
     </>
   );

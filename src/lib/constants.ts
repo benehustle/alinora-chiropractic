@@ -357,9 +357,11 @@ export const OPENING_HOURS = [
 ];
 
 export const CLINIC_INFO = {
-  address: "11 Weston Rd, Canning Vale WA 6155",
-  phone: "08 9408 5724",
+  address: "11 Vostan Road, Canning Vale WA 6155",
+  phone: "08 6189 7696",
   fax: "04 1378 8160",
-  email: "hello@alinorachiropractic.com.au",
+  email: "team@alinorachiro.com.au",
   locations: ["Canning Vale", "Perth", "Willetton", "Southern River"],
 };
+
+export const CLINIC_PHONE_HREF = `tel:${CLINIC_INFO.phone.replace(/\s/g, "")}`;

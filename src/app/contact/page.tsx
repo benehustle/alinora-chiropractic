@@ -4,7 +4,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { CTASection } from "@/components/ui/CTASection";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { ContactForm } from "@/components/contact/ContactForm";
-import { OPENING_HOURS, CLINIC_INFO, BOOKING_URL } from "@/lib/constants";
+import { OPENING_HOURS, CLINIC_INFO, BOOKING_URL, CLINIC_PHONE_HREF } from "@/lib/constants";
 
 const mapsQuery = encodeURIComponent(CLINIC_INFO.address);
 const mapsHref = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
@@ -56,7 +56,7 @@ export default function ContactPage() {
                   <Phone size={14} className="text-teal-primary" />
                   Phone
                 </h3>
-                <a href={`tel:${CLINIC_INFO.phone.replace(/\s/g, "")}`} className="text-lg text-brand-dark hover:text-teal-primary transition-colors">
+                <a href={CLINIC_PHONE_HREF} className="text-lg text-brand-dark hover:text-teal-primary transition-colors">
                   {CLINIC_INFO.phone}
                 </a>
               </div>
@@ -127,7 +127,7 @@ export default function ContactPage() {
         buttonLabel="Book Appointment"
         buttonHref={BOOKING_URL}
         secondaryLabel="Call Us"
-        secondaryHref={`tel:${CLINIC_INFO.phone.replace(/\s/g, "")}`}
+        secondaryHref={CLINIC_PHONE_HREF}
       />
     </>
   );
