@@ -29,11 +29,11 @@ export default function AboutPage() {
           <AnimatedSection direction="left" className="relative lg:sticky lg:top-28">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1768507423533-b87b62769758?auto=format&fit=crop&w=900&q=80"
+                src="/images/about-page.png"
                 alt="Chiropractor providing care in a treatment setting"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover"
+                className="object-cover object-center"
               />
             </div>
           </AnimatedSection>

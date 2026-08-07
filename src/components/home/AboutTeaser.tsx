@@ -10,11 +10,11 @@ export function AboutTeaser() {
         <AnimatedSection direction="left" className="relative">
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1758691462878-6edc3d3da1be?auto=format&fit=crop&w=900&q=80"
-              alt="Practitioner discussing a personalised care plan with a patient"
+              src="/images/about-teaser.png"
+              alt="Practitioner assessing posture with an Exbody analysis grid"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
-              className="object-cover"
+              className="object-cover object-center"
             />
           </div>
           {/* floating badge */}

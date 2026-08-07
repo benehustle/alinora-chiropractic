@@ -6,11 +6,11 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-start overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1768507423533-b87b62769758?auto=format&fit=crop&w=2400&q=80"
-        alt="Chiropractor adjusting a patient in a treatment room"
+        src="/images/hero-main.png"
+        alt="Chiropractor adjusting a patient on a treatment table"
         fill
         sizes="100vw"
-        className="object-cover"
+        className="object-cover object-center"
         priority
       />
       {/* gradient overlay: darker bottom-left, lighter top-right */}

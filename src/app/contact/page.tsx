@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Phone, Mail, MapPin, Clock, Printer } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
 import { CTASection } from "@/components/ui/CTASection";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
@@ -69,14 +69,6 @@ export default function ContactPage() {
                 <a href={`mailto:${CLINIC_INFO.email}`} className="text-lg text-brand-dark hover:text-teal-primary transition-colors break-all">
                   {CLINIC_INFO.email}
                 </a>
-              </div>
-
-              <div>
-                <h3 className="text-xs font-semibold uppercase tracking-widest text-brand-muted mb-3 flex items-center gap-2">
-                  <Printer size={14} className="text-teal-primary" />
-                  Fax
-                </h3>
-                <p className="text-brand-dark">{CLINIC_INFO.fax}</p>
               </div>
 
               <div>

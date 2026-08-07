@@ -40,19 +40,19 @@ export const PRECISION_ITEMS = [
     title: "Posture Analysis",
     description:
       "Your body doesn't lie. We capture postural imbalances caused by daily habits with precise digital imaging, replacing guesswork with objective data.",
-    image: "https://images.unsplash.com/photo-1764314484083-cbd0de7e512c?auto=format&fit=crop&w=900&q=80",
+    image: "/images/posture-analysis.png",
   },
   {
     title: "Musculoskeletal Analysis",
     description:
       "Real time tracking of joint range of motion and movement patterns. Quantified metrics let us pinpoint dysfunction and monitor progress with clinical accuracy.",
-    image: "https://images.unsplash.com/photo-1764314232905-2c3f32d6c717?auto=format&fit=crop&w=900&q=80",
+    image: "/images/musculoskeletal-analysis.png",
   },
   {
     title: "Visualise Your Progress",
     description:
       "Before and after data comparisons that make your improvement tangible. See the exact changes in your posture and mobility over time.",
-    image: "https://images.unsplash.com/photo-1758691461957-474a7686e388?auto=format&fit=crop&w=900&q=80",
+    image: "/images/visualise-progress.png",
   },
 ];
 
@@ -170,7 +170,7 @@ export const TEAM_MEMBERS = [
   {
     name: "Dr Hyo Seok Kim",
     title: "Principal Chiropractor & Founder",
-    image: "https://images.unsplash.com/photo-1758691463384-771db2f192b3?auto=format&fit=crop&crop=faces&w=900&h=1200&q=80",
+    image: "/images/team-hyo-seok-kim.png",
     imageAlt: "Dr Hyo Seok Kim, Principal Chiropractor",
     bio: [
       "Dr Hyo Seok Kim founded ALINORA CHIROPRACTIC with a clear mission: to move spinal care beyond quick fixes into genuine, lasting transformation. With years of clinical experience and a deep interest in biomechanics, he believes every ache and irritation tells a story, and his job is to read that story precisely.",
@@ -245,7 +245,7 @@ export const VISIT_STEPS = [
       { title: "Physical Examination", desc: "Joint motion, muscle tone and nerve function tests." },
       { title: "X-Ray Referral (if needed)", desc: "Targeted x-ray referral when clinically indicated." },
     ],
-    image: "https://images.unsplash.com/photo-1758691462878-6edc3d3da1be?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/first-visit.png",
     cta: "Book First Visit",
   },
   {
@@ -260,7 +260,7 @@ export const VISIT_STEPS = [
       { title: "Care Plan", desc: "Personalised timeline, frequency and milestones." },
       { title: "Q&A", desc: "Your questions answered before treatment begins." },
     ],
-    image: "https://images.unsplash.com/photo-1758691461957-474a7686e388?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/second-visit.png",
     cta: null,
   },
   {
@@ -275,7 +275,7 @@ export const VISIT_STEPS = [
       { title: "Post Adjustment Walk", desc: "Help your spine settle into its new position." },
       { title: "Progress Tracking", desc: "Re-evaluations keep your plan evolving." },
     ],
-    image: "https://images.unsplash.com/photo-1768507423533-b87b62769758?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/ongoing-care.png",
     cta: null,
   },
 ];
@@ -359,7 +359,6 @@ export const OPENING_HOURS = [
 export const CLINIC_INFO = {
   address: "11 Vostan Road, Canning Vale WA 6155",
   phone: "08 6189 7696",
-  fax: "04 1378 8160",
   email: "team@alinorachiro.com.au",
   locations: ["Canning Vale", "Perth", "Willetton", "Southern River"],
 };

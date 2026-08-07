@@ -29,11 +29,11 @@ export function ServicesTeaser() {
         <AnimatedSection direction="right" delay={0.1} className="relative">
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="https://images.unsplash.com/photo-1768507423533-b87b62769758?auto=format&fit=crop&w=1000&q=80"
-              alt="Chiropractor providing a spinal adjustment"
+              src="/images/what-we-do.png"
+              alt="Chiropractor providing a spinal adjustment on a treatment table"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
-              className="object-cover"
+              className="object-cover object-center"
             />
           </div>
         </AnimatedSection>
