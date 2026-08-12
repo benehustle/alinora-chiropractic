@@ -5,6 +5,10 @@ import { Send } from "lucide-react";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
+/** Must stay in sync with the form in `public/__forms.html`, which Netlify parses at deploy time. */
+const FORM_NAME = "contact";
+const FORM_ENDPOINT = "/__forms.html";
+
 export function ContactForm() {
   const [state, setState] = useState<FormState>("idle");
   const [form, setForm] = useState({ name: "", phone: "", email: "", message: "" });
@@ -13,14 +17,17 @@ export function ContactForm() {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    // Read the fields before awaiting — React clears currentTarget once the handler returns.
+    const data = new FormData(e.currentTarget);
     setState("submitting");
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch(FORM_ENDPOINT, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        // Netlify Forms does not accept JSON.
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams([...data].map(([k, v]) => [k, String(v)])).toString(),
       });
       if (res.ok) {
         setState("success");
@@ -46,7 +53,21 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form
+      name={FORM_NAME}
+      method="POST"
+      action={FORM_ENDPOINT}
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      onSubmit={handleSubmit}
+      className="space-y-4"
+    >
+      <input type="hidden" name="form-name" value={FORM_NAME} />
+      <p hidden>
+        <label>
+          Leave this field empty: <input name="bot-field" />
+        </label>
+      </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <input
           name="name"

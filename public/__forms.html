@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <!--
+      Netlify finds forms by parsing the static HTML in the deploy. Next.js renders
+      pages through a function, so the real form in src/components/contact/ContactForm.tsx
+      is invisible to that scan. This file is the static stand-in the build bot reads,
+      and the endpoint ContactForm posts to. Keep the field names in sync.
+    -->
+    <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="name" type="text" />
+      <input name="phone" type="tel" />
+      <input name="email" type="email" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+  </body>
+</html>
