@@ -113,7 +113,7 @@ export const PRICING_DETAILED = [
   {
     service: "Extended Chiro Session",
     duration: "30 min",
-    price: "$100",
+    price: "$105",
     description:
       "A longer session for more complex cases or when additional treatment time is clinically needed.",
   },
@@ -360,7 +360,7 @@ export const CLINIC_INFO = {
   address: "11 Vostan Road, Canning Vale WA 6155",
   phone: "08 6189 7696",
   email: "team@alinorachiro.com.au",
-  locations: ["Canning Vale", "Perth", "Willetton", "Southern River"],
+  locations: ["Canning Vale"],
 };
 
 export const CLINIC_PHONE_HREF = `tel:${CLINIC_INFO.phone.replace(/\s/g, "")}`;
