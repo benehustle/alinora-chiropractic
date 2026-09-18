@@ -173,9 +173,10 @@ export const TEAM_MEMBERS = [
     image: "/images/team-hyo-seok-kim.png",
     imageAlt: "Dr Hyo Seok Kim, Principal Chiropractor",
     bio: [
-      "Dr Hyo Seok Kim founded ALINORA CHIROPRACTIC with a clear mission: to move spinal care beyond quick fixes into genuine, lasting transformation. With years of clinical experience and a deep interest in biomechanics, he believes every ache and irritation tells a story, and his job is to read that story precisely.",
-      "His practice combines advanced 3D postural analysis with hands on spinal adjustment techniques. Rather than chasing symptoms, Dr Kim traces problems back to their structural root, whether that is a rotated pelvis, compressed disc or compensatory muscle pattern. Patients leave not only feeling relief, but understanding why the pain existed in the first place.",
-      "Outside the treatment room, Dr Kim is passionate about educating patients on daily movement habits, ergonomics and preventive exercise. He sees recovery as a partnership, and takes time to make sure every patient feels heard, informed and empowered.",
+      "As the founder of Alinora Chiropractic, newly established in 2026, Dr. Kim brings a fresh, modern approach to patient care that stems from a profound personal journey. Diagnosed with fibrous dysplasia at a young age, Dr. Kim endured ongoing chronic pain following a medical complication during surgery. After years of seeking answers with little success, Chiropractic care provided the life-changing relief he had been looking for, inspiring him to dedicate his career to helping others find that same lasting relief.",
+      "Having lived and practiced across South Korea, Canada, and Australia, Dr. Kim brings a global perspective and a deep understanding of patients from all backgrounds. His calm, caring nature and results-driven philosophy make him a trusted partner on your journey to optimal health, supported by a comprehensive treatment approach that includes Diversified and Gonstead techniques, structural taping, and customized rehabilitative exercises.",
+      "Dr. Kim utilizes advanced 3D musculoskeletal posture scanning technology to provide objective, highly accurate assessments of your structural health. This data-driven approach ensures that the root cause of your discomfort is clearly identified, allowing for a highly targeted and effective treatment plan tailored to your unique needs.",
+      "Outside the treatment room, Dr. Kim loves traveling and pursuing an active lifestyle through soccer, pilates, yoga, and tennis, while also being a passionate esports fan.",
     ],
     quote:
       "My goal is not just to relieve pain, but to help you understand your body so the pain does not return.",
@@ -347,8 +348,8 @@ export const FAQ_ITEMS = [
 ];
 
 export const OPENING_HOURS = [
-  { day: "Monday", hours: "8:00 am – 5:00 pm" },
-  { day: "Tuesday", hours: "8:00 am – 12:00 pm" },
+  { day: "Monday", hours: "8:00 am – 6:00 pm" },
+  { day: "Tuesday", hours: "8:00 am – 6:00 pm" },
   { day: "Wednesday", hours: "Closed" },
   { day: "Thursday", hours: "8:00 am – 5:00 pm" },
   { day: "Friday", hours: "8:00 am – 12:00 pm" },
